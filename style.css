@@ -42,10 +42,12 @@ body {
 .hero-content h1 {
   font-size: 4rem;
   margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .hero-content p {
   font-size: 1.8rem;
+  line-height: 1.6;
 }
 
 .explore-button {
@@ -79,6 +81,7 @@ body {
 .features {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap; /* 確保當螢幕過小時，自動換行 */
   padding: 60px;
   background-color: #f4f4f4;
   animation: fadeIn 1.5s ease-in-out;
@@ -88,6 +91,7 @@ body {
   width: 30%;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px; /* 增加底部間距 */
 }
 
 .feature:hover {
